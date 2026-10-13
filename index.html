@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#0e0a1f" />
+
+  <!-- ✏️ TÍTULO DA ABA / PRÉVIA QUANDO COMPARTILHAR O LINK -->
+  <title>Diego Martins — Designer & Criativo</title>
+  <meta name="description" content="Design criativo para marcas que querem crescer. Identidade visual, social media e muito mais." />
+  <meta property="og:title" content="Diego Martins — Designer & Criativo" />
+  <meta property="og:description" content="Design criativo para marcas que querem crescer." />
+  <!-- 🖼️ IMAGEM DE PRÉVIA (WhatsApp/Instagram ao compartilhar) — use o link completo da imagem depois de hospedar o site -->
+  <!-- <meta property="og:image" content="https://SEU-SITE.com/assets/preview.jpg" /> -->
+
+  <!-- 🖼️ ÍCONE DA ABA (favicon): coloque um arquivo assets/favicon.png (ex.: 256x256) e tire os comentários abaixo -->
+  <!-- <link rel="icon" href="assets/favicon.png" /> -->
+
+  <!-- Fonte Inter (mesma do design) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Brilhos de fundo (decorativos) -->
+  <div class="bg-glow bg-glow--top" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow--bottom" aria-hidden="true"></div>
+
+  <main class="page">
+
+    <!-- =============================================================
+         1) HERO — apresentação + foto
+         ============================================================= -->
+    <section class="hero reveal" style="--d:0">
+      <span class="hero__glow" aria-hidden="true"></span>
+      <span class="hero__ring" aria-hidden="true"></span>
+
+      <!-- 📸 FOTO: NÃO edite aqui. Troque o arquivo em config.js (campo "foto")
+           ou simplesmente salve sua foto como  assets/foto.jpg -->
+      <div class="photo">
+        <span class="photo__placeholder">SUA FOTO<br />AQUI</span>
+        <img id="foto" alt="" />
+      </div>
+
+      <!-- ✏️ TEXTOS DO HERO: edite livremente -->
+      <p class="hero__tag">DESIGNER &amp; CRIATIVO</p>
+      <h1 class="hero__title">
+        Sites e landing<br />pages que fazem<br />sua marca<br /><em>crescer.</em>
+      </h1>
+      <p class="hero__text">
+        Criação de UI/UX design para sites<br />e landing pages que transformam<br />visitas em clientes.
+      </p>
+    </section>
+
+    <!-- =============================================================
+         2) CARDS GRANDES — WhatsApp e Behance
+         🔗 Links: edite em config.js (não aqui)
+         ============================================================= -->
+    <section class="cards">
+
+      <!-- WhatsApp -->
+      <a class="card card--wa reveal" style="--d:1" data-link="whatsapp" href="#">
+        <span class="card__glow" aria-hidden="true"></span>
+        <!-- 🖼️ ÍCONE: para usar uma imagem (ex.: logo do WhatsApp), troque o <svg> por:
+             <img src="assets/icone-whatsapp.png" alt="" />  -->
+        <span class="card__icon card__icon--wa"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 20.5 5 16A8.5 8.5 0 1 1 8 19z"/><path d="M9 8.5c-.4 1.6.9 3.6 2.4 4.7 1.4 1 3 1.6 4 1l.6-1.3-2-1-.9.8c-.8-.3-1.7-1.2-2.1-2l.7-.9-1-2z" fill="currentColor" stroke-width="1"/></svg></span>
+        <span class="card__title">WhatsApp</span>
+        <span class="card__sub">Peça seu orçamento<br />agora mesmo</span>
+        <span class="arrow arrow--white">↗</span>
+      </a>
+
+      <!-- Behance -->
+      <a class="card card--be reveal" style="--d:2" data-link="behance" href="#">
+        <span class="card__orb card__orb--1" aria-hidden="true"></span>
+        <span class="card__orb card__orb--2" aria-hidden="true"></span>
+        <span class="card__orb card__orb--3" aria-hidden="true"></span>
+        <!-- 🖼️ ÍCONE: troque "Bē" por <img src="assets/icone-behance.png" alt="" /> se quiser -->
+        <span class="card__icon card__icon--be">Bē</span>
+        <span class="card__title">Behance</span>
+        <span class="card__sub card__sub--muted">Veja meus projetos e<br />cases de design</span>
+        <span class="arrow arrow--grad">↗</span>
+      </a>
+    </section>
+
+    <!-- =============================================================
+         3) LISTA DE LINKS (Instagram, Portfólio, E-mail)
+         🔗 Links: edite em config.js
+         ============================================================= -->
+    <section class="list">
+
+      <a class="row reveal" style="--d:3" data-link="instagram" href="#">
+        <!-- 🖼️ ÍCONE: troque o <svg> por <img src="assets/icone-instagram.png" alt="" /> se quiser -->
+        <span class="row__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5.5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1" fill="currentColor" stroke="none"/></svg></span>
+        <span class="row__text">
+          <span class="row__title">Instagram</span>
+          <span class="row__sub" data-instagram-handle>@diegomartins12</span>
+        </span>
+        <span class="arrow arrow--dark">↗</span>
+      </a>
+
+      <a class="row reveal" style="--d:4" data-link="portfolio" href="#">
+        <span class="row__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.8 3 2.8 15 0 18M12 3c-2.8 3-2.8 15 0 18"/></svg></span>
+        <span class="row__text">
+          <span class="row__title">Portfólio completo</span>
+          <!-- ✏️ Texto de apoio: edite se quiser -->
+          <span class="row__sub">Site e trabalhos selecionados</span>
+        </span>
+        <span class="arrow arrow--dark">↗</span>
+      </a>
+
+      <a class="row reveal" style="--d:5" data-link="email" href="#">
+        <span class="row__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m4 7.5 8 6 8-6"/></svg></span>
+        <span class="row__text">
+          <span class="row__title">E-mail</span>
+          <span class="row__sub">Para propostas e parcerias</span>
+        </span>
+        <span class="arrow arrow--dark">↗</span>
+      </a>
+
+      <!-- ➕ QUER ADICIONAR OUTRO LINK? Copie um bloco <a class="row"> inteiro,
+           cole aqui embaixo e troque href="#" pelo link desejado
+           (ex.: href="https://www.linkedin.com/in/seu-usuario") -->
+    </section>
+
+    <!-- =============================================================
+         4) CARD "24h" — resposta rápida
+         ============================================================= -->
+    <a class="fast reveal" style="--d:6" data-link="whatsapp" href="#">
+      <span class="fast__big">24h</span>
+      <div class="fast__text">
+        <!-- ✏️ Edite os textos se mudar o prazo -->
+        <p class="fast__label">RESPOSTA RÁPIDA</p>
+        <p class="fast__desc">Orçamento sem compromisso,<br />retorno em até 24 horas.</p>
+      </div>
+      <span class="arrow arrow--grad arrow--lg">↗</span>
+    </a>
+
+    <!-- =============================================================
+         5) FRASE FINAL + BOTÃO WHATSAPP + @
+         ============================================================= -->
+    <section class="closing reveal" style="--d:7">
+      <p class="closing__line">Design com propósito.</p>
+      <p class="closing__line closing__line--accent">Resultados que aparecem.</p>
+
+      <a class="cta" data-link="whatsapp" href="#">
+        <span class="cta__label">Chamar no WhatsApp</span>
+        <span class="arrow arrow--grad arrow--cta">↗</span>
+      </a>
+
+      <p class="closing__handle" data-instagram-handle>@diegomartins12</p>
+    </section>
+
+  </main>
+
+  <!-- Ordem importa: primeiro config.js, depois script.js -->
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
