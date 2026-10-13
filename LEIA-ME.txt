@@ -1,0 +1,5 @@
+PASTA DE IMAGENS
+- foto.jpg  -> sua foto (quadrada, ex.: 800x800px). Aparece no círculo do topo.
+- favicon.png (opcional) -> ícone da aba (veja index.html, tag <link rel="icon">)
+- preview.jpg (opcional) -> imagem de prévia ao compartilhar o link
+- icone-*.png (opcional) -> ícones próprios (veja comentários em index.html)
